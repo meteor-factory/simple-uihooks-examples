@@ -1,0 +1,24 @@
+<head></head>
+<body>
+  {{> buttons}}
+  {{> games}}
+</body>
+
+<template name="games">
+  <ul class="animated">
+  {{#each games}}
+  {{> game}}
+  {{/each}}
+  </ul>
+</template>
+
+<template name="game">
+  <li class="fade">
+  {{title}}
+  </li>
+</template>
+
+<template name="buttons">
+  <button class="js-create-game">Create game</button>
+  <button class="js-remove-game">Remove game</button>
+</template>
